@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Details</h1>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <label for="start-date">Start Date:</label>
+        <input type="date" id="start-date">
+        <label for="end-date">End Date:</label>
+        <input type="date" id="end-date">
+        <button onclick="filterOrders()">Filter</button>
+        <!-- <button onclick="filterOrdersWithRequest()">Filter</button> -->
+    </div>
+
+    <div id="message" class="loading">Loading data...</div>
+    <table id="order-table" style="display: none;">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Client Name</th>
+                <th>Client Email</th>
+                <th>Seller Name</th>
+                <th>Car Type</th>
+                <th>Price</th>
+                <th>Order Date</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
